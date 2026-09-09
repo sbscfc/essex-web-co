@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Essex Web Co. | Professional Websites for Small Businesses</title>
+
+  <meta name="description" content="Essex Web Co. creates professional, modern and affordable websites for small businesses across Essex and beyond.">
+
+  <style>
+    :root {
+      --navy: #0b1220;
+      --navy-light: #111c30;
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --white: #ffffff;
+      --off-white: #f8fafc;
+      --grey: #64748b;
+      --light-grey: #e2e8f0;
+      --dark: #0f172a;
+      --green: #16a34a;
+      --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(226,232,240,0.8);
+    }
+
+    .nav {
+      height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--blue), #60a5fa);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(37,99,235,0.25);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    nav a {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: #475569;
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .nav-cta {
+      background: var(--dark);
+      color: white !important;
+      padding: 11px 18px;
+      border-radius: 10px;
+    }
+
+    .nav-cta:hover {
+      background: var(--blue);
+    }
+
+    .mobile-menu {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      padding: 170px 0 110px;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(37,99,235,0.12), transparent 30%),
+        radial-gradient(circle at 10% 80%, rgba(96,165,250,0.10), transparent 30%),
+        var(--off-white);
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--blue-light);
+      color: var(--blue);
+      padding: 8px 13px;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .hero h1 {
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -3px;
+      margin-bottom: 24px;
+      max-width: 700px;
+    }
+
+    .hero h1 span {
+      color: var(--blue);
+    }
+
+    .hero-text {
+      font-size: 1.15rem;
+      color: var(--grey);
+      max-width: 610px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 22px;
+      border-radius: 11px;
+      font-weight: 750;
+      transition: 0.25s;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: white;
+      box-shadow: 0 10px 25px rgba(37,99,235,0.25);
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--dark);
+      border-color: var(--light-grey);
+    }
+
+    .btn-secondary:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+    }
+
+    /* HERO MOCKUP */
+
+    .browser {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 30px 80px rgba(15,23,42,0.15);
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      transform: rotate(1deg);
+    }
+
+    .browser-top {
+      height: 42px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
+      gap: 7px;
+      border-bottom: 1px solid #e2e8f0;
+      background: #f8fafc;
+    }
+
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    .address {
+      margin-left: 10px;
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      flex: 1;
+      height: 23px;
+    }
+
+    .mock-site {
+      padding: 30px;
+      min-height: 390px;
+      background: linear-gradient(135deg, #0b1220, #172554);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .mock-site::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(37,99,235,0.35);
+      right: -60px;
+      top: -70px;
+      filter: blur(20px);
+    }
+
+    .mock-logo {
+      font-weight: 800;
+      font-size: 0.95rem;
+      margin-bottom: 65px;
+    }
+
+    .mock-site h3 {
+      font-size: 2rem;
+      line-height: 1.1;
+      max-width: 360px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .mock-site p {
+      color: #cbd5e1;
+      max-width: 350px;
+      font-size: 0.9rem;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .mock-button {
+      display: inline-block;
+      background: white;
+      color: var(--dark);
+      padding: 10px 15px;
+      border-radius: 7px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================= */
+
+    .trust {
+      padding: 26px 0;
+      border-bottom: 1px solid var(--light-grey);
+      background: white;
+    }
+
+    .trust-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      flex-wrap: wrap;
+      color: #64748b;
+      font-size: 0.85rem;
+      font-weight: 650;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .check {
+      color: var(--green);
+      font-weight: 900;
+    }
+
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
+
+    section {
+      padding: 100px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 55px;
+    }
+
+    .section-heading .label {
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+      margin-bottom: 16px;
+    }
+
+    .section-heading p {
+      color: var(--grey);
+      font-size: 1.05rem;
+    }
+
+    /* =========================
+       SERVICES
+    ========================= */
+
+    .services {
+      background: white;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      padding: 32px;
+      border: 1px solid var(--light-grey);
+      border-radius: var(--radius);
+      background: white;
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+      border-color: #bfdbfe;
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--blue-light);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      margin-bottom: 22px;
+      font-weight: 900;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      color: var(--grey);
+      font-size: 0.94rem;
+    }
+
+    /* =========================
+       WHY US
+    ========================= */
+
+    .why {
+      background: var(--off-white);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .why-copy h2 {
+      font-size: clamp(2.3rem, 4vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 20px;
+    }
+
+    .why-copy p {
+      color: var(--grey);
+      margin-bottom: 25px;
+    }
+
+    .feature-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .feature-icon {
+      min-width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: white;
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      box-shadow: 0 5px 15px rgba(15,23,42,0.05);
+    }
+
+    .feature h4 {
+      margin-bottom: 2px;
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: 0.88rem;
+    }
+
+    .stats-card {
+      background: var(--navy);
+      border-radius: 22px;
+      padding: 42px;
+      color: white;
+      box-shadow: 0 25px 60px rgba(15,23,42,0.18);
+    }
+
+    .stats-card h3 {
+      font-size: 1.7rem;
+      margin-bottom: 10px;
+    }
+
+    .stats-card > p {
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .stat {
+      padding: 22px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 13px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.7rem;
+      margin-bottom: 2px;
+    }
+
+    .stat span {
+      color: #94a3b8;
+      font-size: 0.8rem;
+    }
+
+    /* =========================
+       PROCESS
+    ========================= */
+
+    .process {
+      background: white;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .process-card {
+      position: relative;
+      padding: 30px 25px;
+      border: 1px solid var(--light-grey);
+      border-radius: var(--radius);
+    }
+
+    .process-number {
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 0.8rem;
+      margin-bottom: 20px;
+    }
+
+    .process-card h3 {
+      margin-bottom: 9px;
+      font-size: 1.1rem;
+    }
+
+    .process-card p {
+      color: var(--grey);
+      font-size: 0.88rem;
+    }
+
+    /* =========================
+       PORTFOLIO
+    ========================= */
+
+    .portfolio {
+      background: var(--off-white);
+    }
+
+    .portfolio-card {
+      background: white;
+      border: 1px solid var(--light-grey);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(15,23,42,0.05);
+    }
+
+    .portfolio-preview {
+      min-height: 330px;
+      background: linear-gradient(135deg, #0b1220, #1e3a8a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio-preview::before {
+      content: "";
+      width: 500px;
+      height: 500px;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .portfolio-window {
+      background: white;
+      width: min(700px, 100%);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 2;
+    }
+
+    .portfolio-window-top {
+      height: 32px;
+      background: #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding-left: 12px;
+    }
+
+    .portfolio-window-top span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    .portfolio-screen {
+      padding: 35px;
+      color: #0f172a;
+    }
+
+    .portfolio-screen small {
+      color: #2563eb;
+      font-weight: 800;
+    }
+
+    .portfolio-screen h3 {
+      font-size: 2rem;
+      margin: 8px 0;
+    }
+
+    .portfolio-screen p {
+      color: #64748b;
+      max-width: 450px;
+      font-size: 0.85rem;
+    }
+
+    .portfolio-info {
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .portfolio-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+
+    .portfolio-info p {
+      color: var(--grey);
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       PRICING
+    ========================= */
+
+    .pricing {
+      background: white;
+    }
+
+    .price-card {
+      max-width: 700px;
+      margin: auto;
+      border: 1px solid #bfdbfe;
+      border-radius: 24px;
+      padding: 42px;
+      background: linear-gradient(180deg, #ffffff, #f8fbff);
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    .price-badge {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-weight: 800;
+      padding: 7px 13px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      margin-bottom: 20px;
+    }
+
+    .price-card h3 {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 3.5rem;
+      font-weight: 900;
+      letter-spacing: -2px;
+      margin: 5px 0;
+    }
+
+    .price span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--grey);
+      letter-spacing: 0;
+    }
+
+    .price-description {
+      color: var(--grey);
+      margin-bottom: 28px;
+    }
+
+    .price-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    .price-list div {
+      font-size: 0.9rem;
+      color: #334155;
+    }
+
+    .price-list div::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 8px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: var(--navy);
+      color: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about .label {
+      color: #60a5fa;
+      font-size: 0.8rem;
+      font-weight: 850;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    .about h2 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      color: #94a3b8;
+      margin-bottom: 18px;
+    }
+
+    .about-box {
+      display: grid;
+      gap: 15px;
+    }
+
+    .about-point {
+      padding: 23px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.04);
+      border-radius: 15px;
+    }
+
+    .about-point h4 {
+      margin-bottom: 4px;
+    }
+
+    .about-point p {
+      margin: 0;
+      font-size: 0.85rem;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: var(--off-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      font-size: 2.8rem;
+      line-height: 1.1;
+      letter-spacing: -1.5px;
+      margin-bottom: 16px;
+    }
+
+    .contact-copy > p {
+      color: var(--grey);
+      margin-bottom: 30px;
+    }
+
+    .contact-details {
+      display: grid;
+      gap: 15px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .contact-detail-icon {
+      width: 42px;
+      height: 42px;
+      background: white;
+      border-radius: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue);
+      font-weight: 900;
+      box-shadow: 0 5px 15px rgba(15,23,42,0.05);
+    }
+
+    .contact-detail span {
+      display: block;
+      color: var(--grey);
+      font-size: 0.75rem;
+    }
+
+    .contact-detail strong {
+      font-size: 0.92rem;
+    }
+
+    .contact-form {
+      background: white;
+      padding: 35px;
+      border-radius: 22px;
+      border: 1px solid var(--light-grey);
+      box-shadow: var(--shadow);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 17px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 750;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 9px;
+      font: inherit;
+      outline: none;
+      background: white;
+      transition: 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-note {
+      margin-top: 12px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #070d18;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand {
+      max-width: 350px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 15px;
+    }
+
+    .footer-brand p {
+      color: #64748b;
+      font-size: 0.88rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 35px;
+      align-items: flex-start;
+    }
+
+    .footer-links a {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 25px;
+      color: #475569;
+      font-size: 0.75rem;
+    }
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 850px) {
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-bottom: 1px solid var(--light-grey);
+        box-shadow: 0 15px 30px rgba(15,23,42,0.08);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 14px 10px;
+      }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .hero-grid,
+      .why-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 50px;
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .service-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .why-grid {
+        gap: 40px;
+      }
+
+      .about-grid {
+        gap: 40px;
+      }
+
+      .portfolio-info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .contact-grid {
+        gap: 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 75px 0;
+      }
+
+      .hero {
+        padding: 135px 0 75px;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-text {
+        font-size: 1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .price-card {
+        padding: 30px 22px;
+      }
+
+      .price-list {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-card {
+        padding: 28px;
+      }
+
+      .contact-form {
+        padding: 25px 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .footer-top,
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container nav">
+
+      <a href="#home" class="logo">
+        <div class="logo-mark">E</div>
+        <span>Essex Web Co.</span>
+      </a>
+
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="nav-cta">Get a Quote</a>
+      </nav>
+
+      <div class="mobile-menu" onclick="toggleMenu()">☰</div>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="eyebrow">
+            <span></span>
+            Essex-based web design
+          </div>
+
+          <h1>
+            Your business deserves a website that <span>works.</span>
+          </h1>
+
+          <p class="hero-text">
+            Professional, modern and affordable websites designed for small businesses that want to look their best online.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              Get a Free Quote →
+            </a>
+
+            <a href="#portfolio" class="btn btn-secondary">
+              View Our Work
+            </a>
+          </div>
+
+        </div>
+
+
+        <div class="browser">
+
+          <div class="browser-top">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="address"></div>
+          </div>
+
+          <div class="mock-site">
+
+            <div class="mock-logo">
+              ESSEX WEB CO.
+            </div>
+
+            <h3>
+              A better website starts here.
+            </h3>
+
+            <p>
+              Modern websites built to help local businesses stand out, build trust and generate enquiries.
+            </p>
+
+            <span class="mock-button">
+              Let's work together
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TRUST BAR
+    ========================== -->
+
+    <div class="trust">
+
+      <div class="container trust-inner">
+
+        <div class="trust-item">
+          <span class="check">✓</span>
+          Mobile-friendly
+        </div>
+
+        <div class="trust-item">
+          <span class="check">✓</span>
+          Professional design
+        </div>
+
+        <div class="trust-item">
+          <span class="check">✓</span>
+          Affordable pricing
+        </div>
+
+        <div class="trust-item">
+          <span class="check">✓</span>
+          Built around your business
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         SERVICES
+    ========================== -->
+
+    <section class="services" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="label">What we do</div>
+
+          <h2>
+            Everything you need to get your business online.
+          </h2>
+
+          <p>
+            No complicated packages. Just a professional website designed around what your business actually needs.
+          </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+          <div class="service-card">
+
+            <div class="icon">⌘</div>
+
+            <h3>Website Design</h3>
+
+            <p>
+              Modern, professional websites created to represent your business and make a great first impression.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">▣</div>
+
+            <h3>Mobile-Friendly</h3>
+
+            <p>
+              Your website will look great and work properly across phones, tablets, laptops and desktop computers.
+            </p>
+
+          </div>
+
+
+          <div class="service-card">
+
+            <div class="icon">↗</div>
+
+            <h3>Business Websites</h3>
+
+            <p>
+              Clear layouts, strong calls to action and the information your customers need to choose your business.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY US
+    ========================== -->
+
+    <section class="why">
+
+      <div class="container why-grid">
+
+        <div class="why-copy">
+
+          <div class="section-heading" style="text-align:left; margin:0 0 30px 0;">
+
+            <div class="label">Why Essex Web Co.</div>
+
+            <h2>
+              Professional doesn't have to mean expensive.
+            </h2>
+
+            <p>
+              We believe small businesses should be able to have a great website without paying thousands of pounds to a traditional agency.
+            </p>
+
+          </div>
+
+
+          <div class="feature-list">
+
+            <div class="feature">
+
+              <div class="feature-icon">✓</div>
+
+              <div>
+                <h4>Designed around you</h4>
+                <p>We create your website around your business, services and customers.</p>
+              </div>
+
+            </div>
+
+
+            <div class="feature">
+
+              <div class="feature-icon">✓</div>
+
+              <div>
+                <h4>Straightforward service</h4>
+                <p>No confusing technical jargon or unnecessary extras.</p>
+              </div>
+
+            </div>
+
+
+            <div class="feature">
+
+              <div class="feature-icon">✓</div>
+
+              <div>
+                <h4>Built for real customers</h4>
+                <p>Every page has a purpose — helping visitors understand your business and get in touch.</p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="stats-card">
+
+          <h3>A website should work for your business.</h3>
+
+          <p>
+            From the first impression to the final enquiry, every part of your website matters.
+          </p>
+
+
+          <div class="stats">
+
+            <div class="stat">
+              <strong>01</strong>
+              <span>Clear & professional</span>
+            </div>
+
+            <div class="stat">
+              <strong>02</strong>
+              <span>Easy to navigate</span>
+            </div>
+
+            <div class="stat">
+              <strong>03</strong>
+              <span>Mobile ready</span>
+            </div>
+
+            <div class="stat">
+              <strong>04</strong>
+              <span>Built for enquiries</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROCESS
+    ========================== -->
+
+    <section class="process">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="label">How it works</div>
+
+          <h2>
+            From idea to live website.
+          </h2>
+
+          <p>
+            We keep the process simple, so you don't need to understand websites or technology.
+          </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <div class="process-card">
+
+            <div class="process-number">01 / DISCOVER</div>
+
+            <h3>Tell us about your business</h3>
+
+            <p>
+              We'll find out what you do, who your customers are and what you want your website to achieve.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">02 / DESIGN</div>
+
+            <h3>We create your website</h3>
+
+            <p>
+              We'll turn your information into a professional website designed around your business.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">03 / REFINE</div>
+
+            <h3>You give us feedback</h3>
+
+            <p>
+              We'll make adjustments so you're happy with the finished website before it goes live.
+            </p>
+
+          </div>
+
+
+          <div class="process-card">
+
+            <div class="process-number">04 / LAUNCH</div>
+
+            <h3>Your website goes live</h3>
+
+            <p>
+              Once everything is ready, we'll help get your new website online.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+
+    <section class="portfolio" id="portfolio">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="label">Our work</div>
+
+          <h2>
+            A look at what we can create.
+          </h2>
+
+          <p>
+            Every project is designed specifically for the business behind it.
+          </p>
+
+        </div>
+
+
+        <div class="portfolio-card">
+
+          <div class="portfolio-preview">
+
+            <div class="portfolio-window">
+
+              <div class="portfolio-window-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="portfolio-screen">
+
+                <small>DEMO PROJECT</small>
+
+                <h3>Benfleet Shine</h3>
+
+                <p>
+                  A modern website concept created for a local cleaning business, demonstrating how a small business can present its services professionally online.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="portfolio-info">
+
+            <div>
+
+              <h3>Benfleet Shine</h3>
+
+              <p>
+                Local business website concept
+              </p>
+
+            </div>
+
+            <a
+              href="https://sbscfc.github.io/benfleet-shine-demo/#home"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              View Website →
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRICING
+    ========================== -->
+
+    <section class="pricing" id="pricing">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div class="label">Simple pricing</div>
+
+          <h2>
+            A professional website without the agency price tag.
+          </h2>
+
+          <p>
+            Our introductory website packages are designed to make getting online affordable for small businesses.
+          </p>
+
+        </div>
+
+
+        <div class="price-card">
+
+          <div class="price-badge">
+            INTRODUCTORY PACKAGE
+          </div>
+
+          <h3>Professional Business Website</h3>
+
+          <div class="price">
+            £149 <span>from</span>
+          </div>
+
+          <p class="price-description">
+            A modern website tailored to your business and ready for customers to use.
+          </p>
+
+
+          <div class="price-list">
+
+            <div>Professional design</div>
+            <div>Mobile-friendly layout</div>
+            <div>Business information</div>
+            <div>Services section</div>
+            <div>Contact section</div>
+            <div>Social media links</div>
+            <div>Basic SEO setup</div>
+            <div>Website launch assistance</div>
+
+          </div>
+
+
+          <a href="#contact" class="btn btn-primary">
+            Get Your Free Quote →
+          </a>
+
+          <p style="margin-top:14px; font-size:0.75rem; color:#94a3b8;">
+            Final price depends on the size and requirements of your website.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+      <div class="container about-grid">
+
+        <div>
+
+          <div class="label">About Essex Web Co.</div>
+
+          <h2>
+            Big-business appearance. Small-business service.
+          </h2>
+
+          <p>
+            Essex Web Co. was created with one simple idea: great websites shouldn't only be available to businesses with huge budgets.
+          </p>
+
+          <p>
+            We work with small businesses to create clean, modern websites that help them look professional online and make it easier for customers to get in touch.
+          </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+          <div class="about-point">
+
+            <h4>Local & approachable</h4>
+
+            <p>
+              Essex-based and focused on making the process straightforward for small businesses.
+            </p>
+
+          </div>
+
+
+          <div class="about-point">
+
+            <h4>Affordable by design</h4>
+
+            <p>
+              No huge agency fees. Just a straightforward service focused on what your business actually needs.
+            </p>
+
+          </div>
+
+
+          <div class="about-point">
+
+            <h4>Built to impress</h4>
+
+            <p>
+              Your website is often the first thing a potential customer sees. We want that first impression to count.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+      <div class="container contact-grid">
+
+        <div class="contact-copy">
+
+          <h2>
+            Ready to give your business a better website?
+          </h2>
+
+          <p>
+            Tell us a little about your business and what you're looking for. We'll get back to you with a straightforward quote.
+          </p>
+
+
+          <div class="contact-details">
+
+            <div class="contact-detail">
+
+              <div class="contact-detail-icon">@</div>
+
+              <div>
+                <span>Email</span>
+                <strong>hello@essexwebco.co.uk</strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-detail">
+
+              <div class="contact-detail-icon">⌂</div>
+
+              <div>
+                <span>Based in</span>
+                <strong>Essex, UK</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <form class="contact-form" onsubmit="sendEmail(event)">
+
+          <div class="form-row">
+
+            <div class="form-group">
+
+              <label for="name">Your name</label>
+
+              <input
+                type="text"
+                id="name"
+                placeholder="John Smith"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label for="business">Business name</label>
+
+              <input
+                type="text"
+                id="business"
+                placeholder="Your Business"
+                required
+              >
+
+            </div>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="email">Email address</label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            >
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="type">What do you need?</label>
+
+            <select id="type">
+
+              <option>New business website</option>
+              <option>Redesign an existing website</option>
+              <option>Website updates</option>
+              <option>Not sure yet</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label for="message">Tell us about your business</label>
+
+            <textarea
+              id="message"
+              placeholder="Tell us what your business does and what you'd like your website to include..."
+              required
+            ></textarea>
+
+          </div>
+
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            Request a Free Quote →
+          </button>
+
+          <p class="form-note">
+            No obligation. We'll simply have a chat about what you need.
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#home" class="logo">
+
+            <div class="logo-mark">E</div>
+
+            <span>Essex Web Co.</span>
+
+          </a>
+
+          <p>
+            Professional, affordable websites for small businesses across Essex and beyond.
+          </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 Essex Web Co. All rights reserved.
+        </span>
+
+        <span>
+          Essex, United Kingdom
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    function toggleMenu() {
+      document.getElementById("nav").classList.toggle("active");
+    }
+
+
+    function sendEmail(event) {
+
+      event.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const business = document.getElementById("business").value;
+      const email = document.getElementById("email").value;
+      const type = document.getElementById("type").value;
+      const message = document.getElementById("message").value;
+
+      const subject =
+        encodeURIComponent("Website enquiry - " + business);
+
+      const body =
+        encodeURIComponent(
+          "Name: " + name +
+          "\nBusiness: " + business +
+          "\nEmail: " + email +
+          "\n\nWebsite requirement: " + type +
+          "\n\nMessage:\n" + message
+        );
+
+      window.location.href =
+        "mailto:hello@essexwebco.co.uk?subject=" +
+        subject +
+        "&body=" +
+        body;
+
+    }
+
+
+    document.querySelectorAll("nav a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document.getElementById("nav").classList.remove("active");
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
